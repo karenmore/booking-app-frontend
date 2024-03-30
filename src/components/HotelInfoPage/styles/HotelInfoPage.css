@@ -1,0 +1,150 @@
+/* Estilos base para pantallas más grandes */
+
+.hotelInfo__title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+
+  }
+  
+  .hotelInfo__img-map {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    gap: 10px;
+  }
+  
+  .hotelInfo__img {
+    width: 100%;
+
+  }
+  
+  .hotelInfo__map {
+    width: 70%;
+  }
+
+  .hotelInfo__country, .hotelInfo__address {
+    font-size: 1.5rem;
+    margin: 10px;
+    color: #d93f3f;
+    font-weight: 700;
+  }
+
+  .hotelInfo__description {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+  }
+  
+  .hotelInfo__country,
+  .hotelInfo__address,
+  .hotelInfo__description {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: justify;
+  }
+  
+  /* Media query para pantallas más pequeñas, como dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    .hotelInfo__img-map {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+  
+    .hotelInfo__img {
+      margin-bottom: 20px;
+    }
+  
+    .hotelInfo__map {
+      width: 100%;
+    }
+  
+    .hotelInfo__country,
+    .hotelInfo__address,
+    .hotelInfo__description {
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+  }
+  
+ 
+  .reservation__title {
+    text-align: center;
+    margin: 1.2rem auto;
+
+  }
+  
+  .form__reservation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    width: 60%;
+    height: 5rem;
+    margin: 2rem auto;
+    box-shadow: 0 0 1em #0003;
+  }
+  
+  .span__chekInOut {
+    color: #000;
+    margin-right: 10px ;
+  }
+  
+  .input__checkInOut {
+    width: 11.4vw;
+    height: 1.5rem;
+    border-color: #000;
+    border-radius: 3px;
+  }
+  
+  .button__booking {
+    width: 7vw;
+    height: 1.5rem;
+    background-color: #fff;
+  }
+
+  .button__booking:hover {
+    background-color: #d93f3f;
+  }
+  
+  @media (max-width: 600px) {
+    .form__reservation {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      height: 35vh;
+      margin: 5vh auto;
+    }
+  
+    .content__info {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .span__chekInOut {
+      color: #000;
+      margin: 10px auto;
+    }
+  
+    .input__checkInOut {
+      width: 70vw;
+      height: 4vh;
+      border-color: white;
+      border-radius: 3px;
+    }
+  
+    .button__booking {
+      width: 70vw;
+      height: 4vh;
+      margin: 10px auto;
+      background-color: #d93f3f;
+      border-radius: 3px;
+    }
+  
+  
+  }

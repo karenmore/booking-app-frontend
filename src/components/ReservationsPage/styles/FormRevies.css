@@ -1,0 +1,79 @@
+/* styles.css */
+
+.form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 1em #0003;
+  
+  }
+  
+  .content__modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .close-modal-btn {
+    color: #000;
+    text-align: right;
+    margin-top: 1vh;
+    margin-right: 1vw;
+    cursor: pointer;
+  }
+  
+  .form__content {
+    text-align: center;
+    color: #000;
+  }
+  
+  .reserve__title__days {
+    color: #000;
+  }
+  
+  .reserve__title__subtotalprice {
+    color: #000;
+  }
+  
+  .color__price {
+    color: #000;
+  }
+  
+  .title__reviews {
+    margin-bottom: 2vh;
+  }
+  
+  .select__reviews {
+    margin-bottom: 1vh;
+  }
+  
+  .reviews__modal__button {
+    margin-top: 1vh;
+    background-color: #d93f3f;
+    width: 50%;
+    height: 20%;
+    font-size: 1.1rem;
+    color: #000;
+    border-radius: 5px;
+  }
+  
+  .reviews__modal__button:hover {
+    background-color: #fff;
+  }
+  
+  .reviews__comments {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vh;
+  }
+  
+  .comments {
+    margin-right: 0.3vw;
+  }  

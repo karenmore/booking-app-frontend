@@ -1,0 +1,368 @@
+
+.menu__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    height: 7vh;
+    margin-bottom: 2vh;
+    box-shadow: 0 0 1em #0003;
+  }
+  
+  .menu__title {
+    color: #000;
+    font-size: 2rem;
+    margin-left: 3rem;
+  }
+  
+  .menu__nav {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    gap: 2rem;
+    margin-right: 2rem;
+  }
+  
+  
+  .Home__Search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; 
+  }
+  
+  .Home__input__search {
+    padding: 10px; 
+    width: 30vw;
+    min-width: 300px;
+    border-radius: 10px;
+  }
+  
+  .Home__button__search {
+    margin-left: 10px; 
+    padding: 10px; 
+    width: 10%;
+    min-width: 70px;
+    height: 44px;
+    background-color: #d93f3f;
+    color: #000;
+    border: 3px solid #0003;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* En tu archivo CSS o componente de estilo en React */
+  
+  .Home__Container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .Home__Container_Filters {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    max-width: 300px;
+    height: 650px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+  
+  .Home__title__filters {
+    color: #000;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .Home__price__filters {
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .Home__form__filters {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Home__from__filters,
+  .Home__to__filters {
+    color: #000;
+  }
+  
+  .Home__from__input__filters,
+  .Home__to__input__filters {
+    border-color: #0003;
+    margin-bottom: 10px;
+    height: 35px;
+  }
+  
+  .Home__button__filters {
+    margin-top: 20px;
+    height: 44px;
+    background-color: #d93f3f;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .Home__button__filters:hover {
+    background-color: #d93f3f;
+    color: #000;
+    transform: scale(1.1); 
+  }
+
+  .otherHotel__title {
+    text-align: center;
+    margin-bottom: 5vh;
+
+  }
+  
+  
+  /*--------------------------------------------------------------------------------*/
+  
+  .Home__Container__Hotelcards {
+    flex: 0 0 100%; 
+    padding: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .Home__Container_Filters {
+      flex: 0 0 25%;
+    }
+  
+    .Home__Container__Hotelcards  {
+      flex: 1;
+    }
+  }
+  
+  
+  /* ESTILOS PARA LAS TARJETAS EN LIST HOTELS */
+  
+  .Hotel__card__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .hotel-container {
+    flex: 0 0 calc(25% - 2rem);
+    box-sizing: border-box;
+    
+  }
+  
+  .hotel-card-wrapper {
+    border-radius: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 65vh;
+    min-height: 400px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+    box-shadow: 0.5em 0.5em 1em #0005;
+    overflow: hidden;
+  }
+
+  
+  
+  .hotel-card-wrapper:hover {
+    box-shadow: 0 0 1em #0003;
+
+  }
+  
+  /* Media queries para dispositivos más pequeños */
+  @media (max-width: 1600px) {
+    .hotel-container {
+     flex: 0 0 calc(33.33% - 2rem); 
+    }
+  
+    .hotel-card-wrapper {
+      width: 100%;
+    }
+  
+  }
+  
+  @media (max-width: 1200px) {
+    .hotel-container {
+      flex: 0 0 calc(50% - 2rem); 
+    }
+  
+    .hotel-card-wrapper {
+      width: 100%;
+    }
+  
+  }
+  
+  @media (max-width: 900px) {
+    .hotel-container {
+      flex: 0 0 100%;
+    }
+  
+    .hotel-card-wrapper {
+      width: 60%;
+    }
+  
+    .Home__Container_Filters {
+      justify-content: center;
+      max-width: 90%;
+      height: 650px;
+      margin-left: 23px;
+    }
+  
+  }
+  
+  @media (max-width: 600px) {
+    .hotel-container {
+      flex: 0 0 100%; 
+    }
+  
+    .hotel-card-wrapper {
+      width: 80%;
+      min-width: 80%;
+    }  
+  }
+  
+  
+  /*ESTILOS DE LA CARD DEL HOTEL*/
+  
+  .HotelCard__Image {
+    width: 100%;
+    height: 30vh;
+    border-radius: 7px;
+    overflow: hidden; 
+    position: relative; 
+  }
+  
+  .HotelCard__Image img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .HotelCard__Image:hover img {
+    transform: scale(1.1);
+  }  
+  
+  .HotelCard__Section {
+    color: #000;
+    text-align: center;
+  }
+  
+  .HotelCard__title {
+    font-weight: 700;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 3vh;
+  }
+  
+  /*.HotelCard__Raiting {
+    
+  }*/
+  
+  .HotelCard__Country {
+   margin-top: 2vh;
+  }
+  
+  .HotelCard__Price {
+   margin-top: 2vh;
+   margin-bottom: 1vh;
+  }
+  
+  .HotelCard__Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 44px;
+    margin: auto;
+    background-color: #d93f3f;
+    color: #000;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+    border: 2px solid #0003;
+    border-radius: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .HotelCard__Button:hover {
+    background-color: #d93f3f;
+    color: #000;
+    transform: scale(1.1); 
+    font-weight: 700;
+  }
+  
+  .content__filter__cities {
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .title__filter__cities {
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .list__filter__cities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    height: 30px;
+    margin: 20px 30px;
+    cursor: pointer;
+    box-shadow: 0 0 1em #0003;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+  }
+  
+  .list__filter__cities:hover {
+    color: #000;
+    background-color: #d93f3f;
+    transform: scale(1.1); 
+  }
+  
+  /* ESTILO DEL CONTENEDOR DE LAS CARDS DENTRO DEL LA PAGINA DEL HOTEL*/
+  
+  .otherHotel__title {
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+  
+  .otherHotel__container__card {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 1200px) {
+    .otherHotel__container__card {
+      margin-left: 8vw;
+      margin-right: 6vw;
+      
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .otherHotel__container__card {
+      margin-left: 8vw;
+      margin-right: 8vw;
+      
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .otherHotel__container__card {
+      margin-left: 0.5vw;
+      margin-right: -1vw;
+      overflow-x: none;
+      
+    }
+  
+  }  

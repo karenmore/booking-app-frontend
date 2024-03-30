@@ -1,0 +1,44 @@
+.slider {
+    display: flex;
+    align-items: center;
+  }
+  
+  .slider__exterior {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 1.5;
+    overflow: hidden;
+  }
+  
+  .slider__interior {
+    display: flex;
+    transition: transform 500ms ease;
+  }
+  
+  .slider__img-container {
+    width: 100%;
+    aspect-ratio: 1.5;
+    padding: 1em;
+  }
+  
+  .slider__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .slider__btn {
+    position: relative;
+    z-index: 1;
+    width: 1.8em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: none;
+    background-color: #d93f3f;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .slider__btn:hover {
+    filter: brightness(1.1)
+  }

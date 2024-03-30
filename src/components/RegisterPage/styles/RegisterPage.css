@@ -1,0 +1,52 @@
+/* -------------DISEÑOS PARA REGISTER PAGE----------------- */
+.register__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    margin: 16vh auto;
+    border-radius: 10px;
+    width: 20%;
+    min-width: 300px;
+    height: 550px;
+    box-shadow: 0 0 1em #0003; 
+  }
+  
+  .register__title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  
+  .register__label__firstName,
+  .register__label__lastName,
+  .register__label__email,
+  .register__label__password,
+  .register__label__gender {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 250px;
+    color: #000;
+  }
+  
+  .register__inputs {
+    height: 35px;
+  }
+  
+  .register__button {
+    margin-top: 20px;
+    width: 250px;
+    height: 44px;
+    color: #000;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .register__button:hover {
+    background-color: #d93f3f;
+    color: #000;
+    transform: scale(1.1); 
+  }  

@@ -1,0 +1,175 @@
+.reservation__title {
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+  .reserve__container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    padding: 0 4vw 0 0;
+    height: 20vh;
+    width: 70%;
+    margin: 5vh auto;
+    /*background-color: #012b45;*/
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+  }
+  
+  .reserve__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .reserve__image {
+    display: block;
+    margin: 0;
+    width: 15vw;
+    max-width: 13vw; 
+    border-radius: 5px;
+    height: 20vh;
+    
+  
+  }
+  
+  .reserve__content__name__city {
+    width: 25vw;
+  }
+  
+  .reserve__hotel__name {
+    color: #000;
+    margin-bottom: 1vh;
+  }
+  
+  .reserve__hotel__city {
+    color: #000;
+  }
+  
+  .reserve__section {
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: center; 
+    color: #000;
+    text-align: right;
+    width: 60vw;
+    height: 22vh;
+  }
+  
+  .reserve__reservationDays {
+    font-size: 16px;
+    margin-bottom: 1vh;
+  }
+  
+  .reserve__days {
+    margin-left: 4vw;
+    color: #000;
+  }
+  
+  .reserve__dollar {
+    margin-left: 5vw;
+    font-size: 12px;
+    font-weight: 200;
+    font-style: italic;
+    color: #000;
+  }
+  
+  .reserve__button__delete {
+    display: flex;
+    align-items: center;
+    width: 7vw;
+    height: 5vh;
+    background-color: rgb(228, 120, 120);
+    border-radius: 10px;
+    border: 3px solid white;
+  }
+  
+  .bx-trash {
+    color: white;
+    font-size: 20px;
+    margin: 0 auto;
+  
+  }
+  
+  .reserve__reviews__click {
+    margin-top: 1vh;
+    color: rgb(228, 120, 120);
+    font-style: italic;
+  }
+  
+  .reserve__reviews__click:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .notification {
+    background-color: #f8d7da; 
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb; 
+    border-radius: 4px; 
+    margin-top: 10px; 
+    font-size: 1rem;
+  }
+  
+  /* Media query para ajustes en dispositivos más pequeños */
+  @media screen and (max-width: 600px) {
+    .reserve__container {
+      flex-direction: column;
+      width: 90%;
+      height: 550px;
+      padding: 2vh 2vw;
+      
+    }
+  
+    .reserve__header {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2vh;
+    }
+  
+    .reserve__image {
+      margin-bottom: 2vh; 
+      width: 60vw;
+      max-width:70vw;
+      border-radius: 40px;
+      height: 25vh;
+      border: 3px solid white;
+    }
+  
+    .reserve__content__name__city {
+      text-align: center;
+      width: 50vw;
+    }
+  
+    .reserve__section {
+      width: 50vw;
+      align-items: center; 
+      text-align: center; 
+      margin-top: -3vh;
+      
+    }
+  
+    .reserve__reservationDays {
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1vh;
+      
+    }
+  
+    .reserve__button__delete {
+      display: flex;
+      align-items: center;
+      width: 20vw;
+      height: 7vh;
+      background-color: rgb(228, 120, 120);
+      border-radius: 10px;
+      border: 3px solid white;
+    }
+    
+  }  
