@@ -7,7 +7,7 @@ const useAuth = () => {
     const [isAuth, setIsAuth] = useState(!!localStorage.getItem('token'));
 
     const createNewUser = (data) => {
-        const url = 'http://localhost:8080/users';
+        const url = 'https://booking-app-backend-94jn.onrender.com/users';
         axios.post(url, data)
             .then((res) => {
                 notify('Usuario registrado con éxito', 'success');
@@ -26,7 +26,7 @@ const useAuth = () => {
     // Login
 
     const loginUser = (data) => {
-        const url = 'http://localhost:8080/users/login'
+        const url = 'https://booking-app-backend-94jn.onrender.com/users/login'
         axios.post(url, data)
         .then(res => {
             console.log(res.data)

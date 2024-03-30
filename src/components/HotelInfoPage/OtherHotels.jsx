@@ -6,7 +6,7 @@ import '../HomePage/styles/HomePage.css'
 
 const OtherHotels = ({ cityId, hotelId }) => {
 
-    const url = `http://localhost:8080/hotels?cityId=${cityId}`
+    const url = `https://booking-app-backend-94jn.onrender.com/hotels?cityId=${cityId}`
 
     const [hotels, getHotels] = useFetch(url)
 
