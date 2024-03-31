@@ -13,6 +13,9 @@ const ReserveCard = ({ reserve, deleteReservation, setReserveSelected, onReviewC
 
   const reservationsDays = reserve ? getDaysFromDates(reserve.checkIn, reserve.checkOut) : null;
 
+  const formattedCheckIn = reserve ? new Date(reserve.checkIn).toLocaleDateString('es-ES') : '';
+  const formattedCheckOut = reserve ? new Date(reserve.checkOut).toLocaleDateString('es-ES') : '';
+
   return (
     <>
    
@@ -31,7 +34,7 @@ const ReserveCard = ({ reserve, deleteReservation, setReserveSelected, onReviewC
           <section className="reserve__section">
             <div className="reserve__reservationDays"><span>Reservations's days:</span> <span className="reserve__days">{reservationsDays}</span></div>
             <div><span>Subtotal Price:</span><span className="reserve__dollar"> USD$</span><span> {Number(reserve.hotel.Price) * reservationsDays}</span></div>
-            <div><span>{reserve.checkIn}, {reserve.checkOut}</span></div>
+            <div><span>Desde </span>{formattedCheckIn} <span>Hasta </span> {formattedCheckOut}</div>
             <button className="reserve__button__delete" onClick={handleDelete}><i className="bx bx-trash"></i></button>
           </section>
         </article>
